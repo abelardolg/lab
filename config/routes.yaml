@@ -1,0 +1,3 @@
+index:
+    path: /
+    controller: App\Create\Infrastructure\api\Create::create
