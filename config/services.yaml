@@ -22,6 +22,6 @@ services:
         resource: "../src/Create/Infrastructure/api/"
         tags: ["controller.service_arguments"]
 
-    App\Shared\Infrastructure\listeners\JsonTransformerExceptionListener:
+    App\Shared\Infrastructure\api\listeners\JsonTransformerExceptionListener:
         tags:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException, priority: 100 }

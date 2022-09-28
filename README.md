@@ -18,3 +18,22 @@ Codenip son:
 # Licencia:
 - Usa este código, modifícalo y distribúyelo siguiendo las buenas prácticas de los proyectos de código abierto.
 
+# Instalación:
+Para ejecutarlo, has de instalar:
+- docker
+- docker-compose
+- make
+
+A continuación, has de ejecutar:
+- make run
+
+La primera vez tardará, pues ha de bajarse todas las imágenes del software que necesita (nginx, php [con todos sus módulos] y MySQL 8.0).
+Una vez terminada la instalación del software, y de que todos los servicios muestren un "done" en color verde, ve a tu navegador y teclea:
+- http://localhost:200
+
+Verás un mensaje de error, pues el endpoint / es, realmente, un controlador que requiere del método POST; por ello, es mejor que ejecutes
+un cliente HTTP (por ejemplo curl) y hagas una petición POST pasándole, en el body, un json con tres campos: "nombre", "email" y "password".
+Te mostrará un mensaje de error si:
+- si no pones uno de los tres campos;
+- si pones un email mal;
+- si la contraseña tiene una longitud menor que 6 caracteres.
