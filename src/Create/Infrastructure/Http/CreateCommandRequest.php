@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Create\Infrastructure\http;
+namespace App\Create\Infrastructure\Http;
 
 use App\Create\Application\CreateCommand;
 use App\Shared\Application\AppCommand;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Create\Infrastructure\api;
+namespace App\Create\Infrastructure\Api;
 
-use App\Create\Infrastructure\http\CreateCommandRequest;
+use App\Create\Infrastructure\Http\CreateCommandRequest;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class Create
