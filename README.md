@@ -37,3 +37,8 @@ Te mostrará un mensaje de error si:
 - si no pones uno de los tres campos;
 - si pones un email mal;
 - si la contraseña tiene una longitud menor que 6 caracteres.
+
+# Añadidos:
+- Argument resolver para convertir la request en el command, dto requerido para ese caso de uso.
+- Validación de los parámetros según reglas establecidas.
+- Acorde con los principios de la separación de capas. El request no pasa a la capa de aplicación.
