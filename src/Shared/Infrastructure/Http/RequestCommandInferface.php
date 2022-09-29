@@ -1,8 +1,7 @@
 <?php
-
 declare(strict_types=1);
 
-namespace App\Shared\Infrastructure\http;
+namespace App\Shared\Infrastructure\Http;
 
 use App\Shared\Application\AppCommand;
 use Symfony\Component\HttpFoundation\Request;

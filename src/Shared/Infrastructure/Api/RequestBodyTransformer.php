@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-namespace App\Shared\Infrastructure\api;
+namespace App\Shared\Infrastructure\Api;
 
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request;

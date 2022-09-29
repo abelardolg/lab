@@ -19,9 +19,9 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Kernel.php'
     App\Create\Infrastructure\api\:
-        resource: "../src/Create/Infrastructure/api/"
+        resource: "../src/Create/Infrastructure/Api/"
         tags: ["controller.service_arguments"]
 
-    App\Shared\Infrastructure\api\listeners\JsonTransformerExceptionListener:
+    App\Shared\Infrastructure\Api\listeners\JsonTransformerExceptionListener:
         tags:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException, priority: 100 }

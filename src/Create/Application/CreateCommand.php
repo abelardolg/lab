@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Create\Application;
 
 use App\Shared\Application\AppCommand;
-use App\Shared\Infrastructure\http\RequestCommandInferface;
+use App\Shared\Infrastructure\Http\RequestCommandInferface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints as Assert;
 

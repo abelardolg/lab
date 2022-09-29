@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
-namespace App\Shared\Infrastructure\http;
+namespace App\Shared\Infrastructure\Http;
 
 use ApiPlatform\Core\Validator\ValidatorInterface;
-use App\Shared\Infrastructure\api\RequestBodyTransformer;
+use App\Shared\Infrastructure\Api\RequestBodyTransformer;
 use Generator;
 use ReflectionClass;
 use Symfony\Component\HttpFoundation\Request;

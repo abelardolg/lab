@@ -1,10 +1,11 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Create\Infrastructure\Http;
 
 use App\Create\Application\CreateCommand;
 use App\Shared\Application\AppCommand;
-use App\Shared\Infrastructure\http\RequestCommandInferface;
+use App\Shared\Infrastructure\Http\RequestCommandInferface;
 use Symfony\Component\HttpFoundation\Request;
 
 class CreateCommandRequest implements RequestCommandInferface
